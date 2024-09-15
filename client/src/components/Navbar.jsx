@@ -1,4 +1,3 @@
-// import {Container} from 'react-bootstrap'
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 
@@ -10,7 +9,7 @@ export const Navbar1 = () => {
             <Navbar className="bg-body-tertiary">
                 <Container>
                     <Navbar.Brand href="#">
-                        <img alt="Error Logo" src="/client/public/vite.svg" width="30" height="30" className=""/>
+                        <img alt="Error Logo" src="/client/src/assets/react.svg" width="30" height="30" className=""/>
                         React Bootstrap
                     </Navbar.Brand>
                 </Container>
