@@ -1,8 +1,9 @@
 // import {Container} from 'react-bootstrap'
 import Container from 'react-bootstrap/Container';
+import Navbar from 'react-bootstrap/Navbar';
 
 
-export const Navbar = () => {
+export const Navbar1 = () => {
 
     return (
         <>
