@@ -3,7 +3,6 @@ import './App.css'
 
 function App() {
 
-
   return (
     <>
       <h1>React bootstrap</h1>
@@ -11,4 +10,4 @@ function App() {
   )
 }
 
-export default App
+export default App 
