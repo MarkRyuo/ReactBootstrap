@@ -10,7 +10,7 @@ export const Navbar1 = () => {
             <Navbar className="bg-body-tertiary">
                 <Container>
                     <Navbar.Brand href="#">
-                        <img alt="" src="/client/public/vite.svg" width="30" height="30" className="d-inline-block align-top"/>
+                        <img alt="Error Logo" src="/client/public/vite.svg" width="30" height="30" className="d-inline-block align-top"/>
                         React Bootstrap
                     </Navbar.Brand>
                 </Container>
