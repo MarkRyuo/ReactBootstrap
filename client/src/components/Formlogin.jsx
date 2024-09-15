@@ -1,26 +1,21 @@
+import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import Form from 'react-bootstrap/Form';
 
-
-export const Formlogin = () => {
-
+function Formlogin() {
     return (
         <>
-            <Form.Label htmlFor="inputPassword5">Password</Form.Label>
-                <Form.Control
-                    type="password"
-                    id="inputPassword5"
-                    aria-describedby="passwordHelpBlock"
-                />
-                <Form.Text id="passwordHelpBlock" muted>
-                    Your password must be 8-20 characters long, contain letters and numbers,
-                    and must not contain spaces, special characters, or emoji.
-                </Form.Text>
+            <FloatingLabel
+                controlId="floatingInput"
+                label="Email address"
+                className="mb-3">
 
-            <Form.Label htmlFor="inputUsername5">Username</Form.Label>
-                <Form.Control
-                    type="username"
-                    id="inputUsername5"
-                />
+            <Form.Control type="email" placeholder="name@example.com" />
+            </FloatingLabel>
+            <FloatingLabel controlId="floatingPassword" label="Password">
+            <Form.Control type="password" placeholder="Password" />
+            </FloatingLabel>
         </>
-    )
+    );
 }
+
+export default Formlogin;
