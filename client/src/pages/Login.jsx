@@ -2,7 +2,7 @@ import Container from "react-bootstrap/esm/Container"
 import Formlogin from "../components/Formlogin"
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import './Login.css' ;
+// import './Login.css' ;
 import ReactLogo from '../assets/react.svg'
 
 export const Login = () => {
@@ -16,7 +16,9 @@ export const Login = () => {
                         <img src={ReactLogo} alt="Error Image"></img>
                     </Col>
                     <Col lg={12} md={12}>
-                        <Formlogin/>
+                        <div className="formlog">
+                            <Formlogin/>
+                        </div>    
                     </Col>
                 </Row>
             </Container>
