@@ -15,7 +15,7 @@ export const Login = () => {
                     <Col lg={12}>
                         <img src={ReactLogo} alt="Error Image"></img>
                     </Col>
-                    <Col lg={12} md={12}>
+                    <Col lg={12}>
                         <div className="formlog">
                             <Formlogin/>
                         </div>    
