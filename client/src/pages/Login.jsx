@@ -1,6 +1,6 @@
 import Container from "react-bootstrap/esm/Container"
 import Formlogin from "../components/Formlogin"
-import './'
+import './Login.css'
 
 export const Login = () => {
 
