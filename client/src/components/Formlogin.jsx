@@ -6,11 +6,11 @@ import './Formlogin.css' ;
 function Formlogin() {
     return (
         <>  
-            <div>
+            <div className='floating-label'>
                 <FloatingLabel 
                     controlId="floatingInput"
                     label="Email address"
-                    className="mb-3 floating-label">
+                    className="mb-3 ">
 
                     <Form.Control type="email" placeholder="name@example.com" />
                     </FloatingLabel>
