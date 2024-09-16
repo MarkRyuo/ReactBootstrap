@@ -5,12 +5,16 @@ import Col from 'react-bootstrap/Col';
 // import './Login.css' ;
 import ReactLogo from '../assets/react.svg'
 import Button from 'react-bootstrap/Button';
+import { Navbar1 } from "../components/Navbar";
+
 
 export const Login = () => {
 
     return (
-        <>
-
+        <>  
+            <Container fluid className="mb-5 pb-5">
+                <Navbar1/>
+            </Container>
             <Container lg className="Container-login mt-4">
                 <Row className="text-center" >
                     <Col lg={12}>
