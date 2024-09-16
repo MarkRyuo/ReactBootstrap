@@ -10,12 +10,11 @@ export const Login = () => {
         <>
 
             <Container lg className="Container-login">
+                r
                 <Row>
-                    <Col>
+                    <Col lg='12'>
                         <Formlogin/>
-
                     </Col>
-
                 </Row>
             </Container>
 
