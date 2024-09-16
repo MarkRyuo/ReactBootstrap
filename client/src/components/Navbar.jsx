@@ -7,7 +7,7 @@ export const Navbar1 = () => {
 
     return (
         <>
-            <Navbar className="bg-light">
+            <Navbar bg='light'>
                 <Container xl>
                     <Navbar.Brand href="#">
                         <img alt="" src="/client/src/assets/react.svg" width="30" height="30" className=""/>
