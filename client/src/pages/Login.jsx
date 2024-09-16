@@ -5,8 +5,8 @@ export const Login = () => {
     return (
         <>
 
-            <Container>
-
+            <Container lg>
+                <Formlogin/>
             </Container>
 
         </>
