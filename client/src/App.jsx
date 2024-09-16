@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <Navbar1/>
-      <Formlogin/>
+      <Login/>
     </>
   )
 }
