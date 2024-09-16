@@ -3,9 +3,10 @@ import Formlogin from "../components/Formlogin"
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 // import './Login.css' ;
-import ReactLogo from '../assets/react.svg'
+// import ReactLogo from '../assets/react.svg'
 import Button from 'react-bootstrap/Button';
 import { Navbar1 } from "../components/Navbar";
+import { BsBox } from "react-icons/bs";
 
 
 export const Login = () => {
@@ -18,7 +19,7 @@ export const Login = () => {
             <Container lg className="Container-login mt-4">
                 <Row className="text-center" >
                     <Col lg={12}>
-                        <img src={ReactLogo} alt="Error Image" width={"100px"}></img>
+                        <BsBox size={"100px"}/>
                     </Col>
                     <Col lg={12} className="d-flex justify-content-center mt-3">
                         <div style={{width:"400px"}}>
