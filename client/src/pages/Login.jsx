@@ -19,7 +19,7 @@ export const Login = () => {
             <Container lg className="Container-login mt-4">
                 <Row className="text-center" >
                     <Col lg={12}>
-                        <BsBox size={"75px"}/>
+                        <BsBox size={75}/>
                     </Col>
                     <Col lg={12} className="d-flex justify-content-center mt-3">
                         <div style={{width:"400px"}}>
