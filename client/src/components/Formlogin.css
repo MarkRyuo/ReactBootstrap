@@ -13,5 +13,20 @@
 }
 
 
+/* *|| Small Screen */
 
+@media screen and (min-width: 360px) {
+    .floating-label {
+        width: 50%;
+        min-width: 350px;
+        border: 1px solid green;
+    }
+}
 
+@media screen and (min-width: 720px) {
+    .floating-label {
+        width: 50%;
+        min-width: 350px;
+        border: 1px solid red;
+    }
+}
