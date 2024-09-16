@@ -11,7 +11,7 @@ export const Login = () => {
         <>
 
             <Container lg className="Container-login">
-                <Row className="text-center justify-content-center" >
+                <Row className="text-center " >
                     <Col lg={12}>
                         <img src={ReactLogo} alt="Error Image"></img>
                     </Col>
