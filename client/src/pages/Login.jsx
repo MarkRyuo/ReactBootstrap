@@ -11,15 +11,16 @@ export const Login = () => {
         <>
 
             <Container lg className="Container-login">
-                <Row>
-                    <Col lg={6}>
+                <Row className="text-center" >
+                    <Col lg={12}>
                         <img src={ReactLogo} alt="Error Image"></img>
                     </Col>
-                </Row>
-                <Row>
-                    <Col lg={6}>
+                    <Col lg={6} md={6}>
                         <Formlogin/>
                     </Col>
+                </Row>
+                <Row className="justify-content-center">
+                    
                 </Row>
             </Container>
 
