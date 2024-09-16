@@ -16,13 +16,13 @@ export const Login = () => {
                     <Col lg={12}>
                         <img src={ReactLogo} alt="Error Image" width={"100px"}></img>
                     </Col>
-                    <Col lg={12} className="d-flex justify-content-center">
-                        <div style={{width:"300px"}}>
+                    <Col lg={12} className="d-flex justify-content-center mt-3">
+                        <div style={{width:"400px"}}>
                             <Formlogin/> 
                         </div>   
                     </Col>
-                    <Col lg={12}>
-                        <Button variant="primary">Login</Button>
+                    <Col lg={12} className="mt-3">
+                        <Button variant="primary" size="lg">Login</Button>
                     </Col>
                 </Row>
             </Container>
