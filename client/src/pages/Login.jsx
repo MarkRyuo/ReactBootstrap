@@ -2,7 +2,7 @@ import Container from "react-bootstrap/esm/Container"
 import Formlogin from "../components/Formlogin"
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import './Login.css' ;
+// import './Login.css' ;
 import ReactLogo from '../assets/react.svg'
 import Button from 'react-bootstrap/Button';
 
