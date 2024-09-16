@@ -12,11 +12,11 @@ export const Login = () => {
             <Container lg className="Container-login">
                 <Row>
                     <Col>
-                        
+                        <Formlogin/>
+
                     </Col>
 
                 </Row>
-                <Formlogin/>
             </Container>
 
         </>
