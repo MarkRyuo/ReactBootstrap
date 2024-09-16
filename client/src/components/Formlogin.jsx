@@ -10,7 +10,7 @@ function Formlogin() {
                 <FloatingLabel 
                     controlId="floatingInput"
                     label="Email address"
-                    className="mb-3 ">
+                    className="mb-3 floating-label">
 
                     <Form.Control type="email" placeholder="name@example.com" />
                     </FloatingLabel>
