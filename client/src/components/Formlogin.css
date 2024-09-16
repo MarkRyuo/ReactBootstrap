@@ -23,6 +23,7 @@
     }
 }
 
+/* *|| large Screen */
 @media screen and (min-width: 720px) {
     .floating-label {
         width: 50%;
