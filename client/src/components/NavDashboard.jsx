@@ -19,7 +19,9 @@ export const NavDashboard = () => {
                                 <Offcanvas.Title>List</Offcanvas.Title>
                             </Offcanvas.Header>
                             <Offcanvas.Body>
-                                <Button variant="primary">Primary</Button>{' '}
+                                <Button variant="primary" onClick={() => {
+                                    
+                                }}>Primary</Button>
                                 <Button variant="secondary">Secondary</Button>
                                 <Button variant="success">Success</Button>
                                 <Button variant="warning">Warning</Button>
