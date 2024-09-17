@@ -20,7 +20,9 @@ export const NavDashboard = () => {
                             </Offcanvas.Header>
                             <Offcanvas.Body>
                                 <Button variant="primary" onClick={() => {
-                                    
+                                    handleClose()
+
+
                                 }}>Primary</Button>
                                 <Button variant="secondary">Secondary</Button>
                                 <Button variant="success">Success</Button>
@@ -32,7 +34,7 @@ export const NavDashboard = () => {
                                 <Button variant="link">Link</Button>
                             </Offcanvas.Body>
                         </Offcanvas>
-                    <Navbar.Brand>SIMS</Navbar.Brand>
+                        <Navbar.Brand>SIMS</Navbar.Brand>
                 </Container>
             </Navbar>
         </>
