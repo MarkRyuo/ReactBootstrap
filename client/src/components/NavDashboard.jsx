@@ -15,6 +15,7 @@ export const NavDashboard = () => {
     const handleProduct = () => {
         navigate("/Product")
     }
+    
     return (
         <>
             <Navbar className="bg-body-tertiary">
