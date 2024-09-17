@@ -7,7 +7,7 @@ export const Dashboard = () => {
     return (
         <Router>
             <Routes>
-                
+                <Route/>
             </Routes>
         </Router>
     )
