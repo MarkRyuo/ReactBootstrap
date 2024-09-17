@@ -24,7 +24,7 @@ export const Login = () => {
             <Container fluid className="mb-5 pb-5">
                 <Navbar1/>
             </Container>
-            <Container lg className="Container-login mt-4">
+            <Container fluid='lg' className="Container-login mt-4">
                 <Row className="text-center" >
                     <Col lg={12}>
                         <BsBox size={75}/>
@@ -35,7 +35,7 @@ export const Login = () => {
                         </div>   
                     </Col>
                     <Col lg={12} className="mt-3">
-                        <Button variant="primary" size="lg" onClick={Handlelogin()}>Login</Button>
+                        <Button variant="primary" size="lg" onClick={Handlelogin}>Login</Button>
                     </Col>
                 </Row>
             </Container>

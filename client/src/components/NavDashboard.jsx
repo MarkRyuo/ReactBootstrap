@@ -9,7 +9,7 @@ export const NavDashboard = () => {
             <Navbar className="bg-body-tertiary">
                 <Container>
                     <Button variant="outline-primary"><GiHamburgerMenu /></Button>
-                    <Navbar.Brand>Brand text</Navbar.Brand>
+                    <Navbar.Brand>SIMS</Navbar.Brand>
                 </Container>
             </Navbar>
         </>
