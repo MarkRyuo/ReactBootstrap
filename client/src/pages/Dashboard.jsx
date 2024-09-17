@@ -10,11 +10,11 @@ export const Dashboard = () => {
     return (
         <>
         <NavDashboard/>
-        <Container fluid='lg'>
+        <Container fluid='lg' className="nav">
             <h1>Dashboard</h1>
         </Container>
         <Routes>
-            <Route path="/Product" element={<Product/>}/>
+            <Route path="Product" element={<Product/>}/>
         </Routes>
         </>
     )
