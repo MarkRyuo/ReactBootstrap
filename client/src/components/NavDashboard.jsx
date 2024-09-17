@@ -1,5 +1,4 @@
-import Container from 'react-bootstrap/Container';
-import Navbar from 'react-bootstrap/Navbar';
+import { Button, Container, Navbar } from 'react-bootstrap'
 
 
 export const NavDashboard = () => {
@@ -8,6 +7,7 @@ export const NavDashboard = () => {
         <>
             <Navbar className="bg-body-tertiary">
                 <Container>
+
                     <Navbar.Brand>Brand text</Navbar.Brand>
                 </Container>
             </Navbar>
