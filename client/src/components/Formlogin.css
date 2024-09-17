@@ -1,0 +1,33 @@
+
+
+.floating-label {
+    width: 50%;
+    max-width: 40%;
+    height: 300px;
+    min-width: 400px;
+    border: 1px solid;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* *|| Small Screen */
+
+@media screen and (min-width: 360px) {
+    .floating-label {
+        width: 50%;
+        min-width: 350px;
+        border: 1px solid green;
+    }
+}
+
+/* *|| large Screen */
+@media screen and (min-width: 720px) {
+    .floating-label {
+        width: 50%;
+        min-width: 350px;
+        border: 1px solid red;
+    }
+}

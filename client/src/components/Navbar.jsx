@@ -2,15 +2,17 @@ import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Button from 'react-bootstrap/Button';
 
+import { BsBoxSeam } from "react-icons/bs";
+
 
 export const Navbar1 = () => {
 
     return (
         <>
-            <Navbar className="bg-light">
+            <Navbar bg='light'>
                 <Container xl>
                     <Navbar.Brand href="#">
-                        <img alt="" src="/client/src/assets/react.svg" width="30" height="30" className=""/>
+                        <BsBoxSeam size={30}/>
                         React Bootstrap
                     </Navbar.Brand>
                     <Button variant="outline-primary">Download App</Button>
