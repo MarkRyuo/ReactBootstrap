@@ -10,9 +10,9 @@ export const Dashboard = () => {
     return (
         <>
         <NavDashboard/>
-        <div>
+        <Container fluid='lg'>
             <h1>Dashboard</h1>
-        </div>
+        </Container>
         <Routes>
             <Route path="/Product" element={<Product/>}/>
         </Routes>
