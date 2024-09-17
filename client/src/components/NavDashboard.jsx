@@ -16,11 +16,18 @@ export const NavDashboard = () => {
                     <Button variant="outline-primary" onClick={handleShow}><GiHamburgerMenu /></Button>
                         <Offcanvas show={show} onHide={handleClose}>
                             <Offcanvas.Header closeButton>
-                                <Offcanvas.Title>Offcanvas</Offcanvas.Title>
+                                <Offcanvas.Title>List</Offcanvas.Title>
                             </Offcanvas.Header>
                             <Offcanvas.Body>
-                                Some text as placeholder. In real life you can have the elements you
-                                have chosen. Like, text, images, lists, etc.
+                                <Button variant="primary">Primary</Button>{' '}
+                                <Button variant="secondary">Secondary</Button>{' '}
+                                <Button variant="success">Success</Button>{' '}
+                                <Button variant="warning">Warning</Button>{' '}
+                                <Button variant="danger">Danger</Button>{' '}
+                                <Button variant="info">Info</Button>{' '}
+                                <Button variant="light">Light</Button>{' '}
+                                <Button variant="dark">Dark</Button>
+                                <Button variant="link">Link</Button>
                             </Offcanvas.Body>
                         </Offcanvas>
                     <Navbar.Brand>SIMS</Navbar.Brand>
