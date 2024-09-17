@@ -15,7 +15,6 @@ export const Dashboard = () => {
         </Container>
         <Routes>
             <Route path="/Product" element={<Product/>}/>
-            <Route path="/Product" element={<Product/>}/>
         </Routes>
         </>
     )
