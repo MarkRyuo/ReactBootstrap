@@ -13,7 +13,7 @@ export const NavDashboard = () => {
     const navigate = useNavigate() ;
 
     conts handleProduct = () => {
-        navigate(/Product")
+        navigate("/Product")
     }
     return (
         <>
@@ -27,7 +27,7 @@ export const NavDashboard = () => {
                             <Offcanvas.Body>
                                 <Button variant="primary" onClick={() => {
                                     handleClose()
-                                    
+                                    handleProduct()
                                 }}>Product</Button>
                                 <Button variant="secondary">Secondary</Button>
                                 <Button variant="success">Success</Button>
