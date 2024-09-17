@@ -1,4 +1,4 @@
-import { Button, Container, Navbar } from 'react-bootstrap'
+import { Button, Container, Navbar, Offcanvas } from 'react-bootstrap'
 import { GiHamburgerMenu } from "react-icons/gi";
 
 
