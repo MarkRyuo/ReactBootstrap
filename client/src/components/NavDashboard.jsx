@@ -1,6 +1,7 @@
 import { Button, Container, Navbar, Offcanvas } from 'react-bootstrap'
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 
 export const NavDashboard = () => {
@@ -9,6 +10,11 @@ export const NavDashboard = () => {
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
+    const navigate = useNavigate() ;
+
+    conts handleProduct = () => {
+        navigate(/)
+    }
     return (
         <>
             <Navbar className="bg-body-tertiary">
@@ -22,15 +28,9 @@ export const NavDashboard = () => {
                                 <Button variant="primary" onClick={() => {
                                     handleClose()
                                     
-                                }}>Primary</Button>
+                                }}>Product</Button>
                                 <Button variant="secondary">Secondary</Button>
                                 <Button variant="success">Success</Button>
-                                <Button variant="warning">Warning</Button>
-                                <Button variant="danger">Danger</Button>
-                                <Button variant="info">Info</Button>
-                                <Button variant="light">Light</Button>
-                                <Button variant="dark">Dark</Button>
-                                <Button variant="link">Link</Button>
                             </Offcanvas.Body>
                         </Offcanvas>
                         <Navbar.Brand>SIMS</Navbar.Brand>
