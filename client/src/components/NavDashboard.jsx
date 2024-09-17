@@ -13,7 +13,7 @@ export const NavDashboard = () => {
         <>
             <Navbar className="bg-body-tertiary">
                 <Container>
-                    <Button variant="outline-primary"><GiHamburgerMenu /></Button>
+                    <Button variant="outline-primary" onClick={handleShow}><GiHamburgerMenu /></Button>
                     <Navbar.Brand>SIMS</Navbar.Brand>
                 </Container>
             </Navbar>
