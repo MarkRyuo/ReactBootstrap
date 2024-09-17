@@ -1,5 +1,4 @@
 import { NavDashboard } from "../components/NavDashboard";
-import Product from "./Product";
 
 
 
