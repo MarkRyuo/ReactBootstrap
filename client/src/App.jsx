@@ -9,12 +9,10 @@ function App() {
 
   return (
     <Router>
+      <Dashboard/>
       <Routes>
         <Route path='/' element={<Login/>}/>
-      </Routes>
-      <Routes>
-        <Dashboard/>
-        <Route path='/Dashboard' element={<Dashboard}/>
+        <Route path='/Dashboard' element={<Dashboard/>}/>
       </Routes>
     </Router>
   )
