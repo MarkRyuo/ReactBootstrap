@@ -2,8 +2,8 @@
 
 export default function Product() {
     return (
-        <div>
+        <Container fluid>
             <h1>Product Page</h1>
-        </div>
+        </Container>
     )
 }

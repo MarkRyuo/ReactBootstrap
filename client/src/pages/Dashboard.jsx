@@ -9,7 +9,7 @@ export const Dashboard = () => {
 
     return (
         <>
-            <NavDashboard/>
+        <NavDashboard/>
         <Container fluid='lg'>
             <h1>Dashboard</h1>
         </Container>
