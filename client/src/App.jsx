@@ -9,7 +9,6 @@ function App() {
 
   return (
     <Router>
-      <Dashboard/>
       <Routes>
         <Route path='/' element={<Login/>}/>
         <Route path='/Dashboard' element={<Dashboard/>}/>
