@@ -8,8 +8,16 @@ import Button from 'react-bootstrap/Button';
 import { Navbar1 } from "../components/Navbar";
 import { BsBox } from "react-icons/bs";
 
+import { useNavigate } from "react-router-dom";
+
 
 export const Login = () => {
+
+    const navigate = useNavigate() ;
+
+    const Handlelogin = () => {
+        navigate("/Dashboard")
+    }
 
     return (
         <>  
