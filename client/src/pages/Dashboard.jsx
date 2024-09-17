@@ -9,11 +9,11 @@ export const Dashboard = () => {
 
     return (
         <>
-        <NavDashboard/>
         <Container fluid='lg'>
             <h1>Dashboard</h1>
         </Container>
         <Routes>
+        <NavDashboard/>
             <Route path="/Product" element={<Product/>}/>
         </Routes>
         </>

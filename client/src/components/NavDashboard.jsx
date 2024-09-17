@@ -12,7 +12,7 @@ export const NavDashboard = () => {
 
     const navigate = useNavigate() ;
 
-    conts handleProduct = () => {
+    const handleProduct = () => {
         navigate("/Product")
     }
     return (
