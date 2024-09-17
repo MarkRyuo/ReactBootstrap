@@ -29,8 +29,6 @@ export const NavDashboard = () => {
                                 <Button variant="primary" onClick={() => {
                                     handleClose()
                                     handleProduct()
-
-                                    
                                 }}>Product</Button>
                                 <Button variant="secondary">Secondary</Button>
                                 <Button variant="success">Success</Button>
