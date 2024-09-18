@@ -10,7 +10,7 @@ export const Dashboard = () => {
     return (
         <>
         <NavDashboard/>
-            <Routes>
+        <Routes>
             <Route path="/Product" element={<Product/>}/>
         </Routes>
         </>
