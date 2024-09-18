@@ -10,7 +10,7 @@ export const Dashboard = () => {
         <>
             <Container fluid='lg'>
                 <NavDashboard/>
-                <Outlet/>
+                <Outlet/> {/** Nilalaman ay ang nested route */}
             </Container>
         </>
     )
