@@ -1,7 +1,6 @@
 
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import Form from 'react-bootstrap/Form';
-// import './Formlogin.css' ;
 
 function Formlogin() {
     return (
