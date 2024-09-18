@@ -11,25 +11,27 @@ export const NavDashboard = () => {
     const handleShow = () => setShow(true);
 
     return (
-        <>
-            <Navbar className="bg-body-tertiary">
-                <Container>
-                    <Button variant="outline-primary" onClick={handleShow}><GiHamburgerMenu /></Button>
-                        <Offcanvas show={show} onHide={handleClose}>
-                            <Offcanvas.Header closeButton>
-                                <Offcanvas.Title>List</Offcanvas.Title>
-                            </Offcanvas.Header>
-                            <Offcanvas.Body>
-                                <Button as={Link} to=" Product" onClick={() => {handleClose()}}>
-                                    Product
-                                </Button>
-                                <Button as={Link}  to=' Dash' variant="secondary" onClick={() => {handleClose()}}>Dashboard</Button>
-                                <Button as={Link} to='/' variant="success" >Logout</Button>
-                            </Offcanvas.Body>
-                        </Offcanvas>
-                        <Navbar.Brand>SIMS</Navbar.Brand>
-                </Container>
-            </Navbar>
+        <>  
+            <Container>
+                <Navbar className="bg-body-tertiary">
+                    <Container>
+                        <Button variant="outline-primary" onClick={handleShow}><GiHamburgerMenu /></Button>
+                            <Offcanvas show={show} onHide={handleClose}>
+                                <Offcanvas.Header closeButton>
+                                    <Offcanvas.Title>List</Offcanvas.Title>
+                                </Offcanvas.Header>
+                                <Offcanvas.Body>
+                                    <Button as={Link} to=" Product" onClick={() => {handleClose()}}>
+                                        Product
+                                    </Button>
+                                    <Button as={Link}  to=' Dash' variant="secondary" onClick={() => {handleClose()}}>Dashboard</Button>
+                                    <Button as={Link} to='/' variant="success" >Logout</Button>
+                                </Offcanvas.Body>
+                            </Offcanvas>
+                            <Navbar.Brand>SIMS</Navbar.Brand>
+                    </Container>
+                </Navbar>
+            </Container>
         </>
     )
 }
