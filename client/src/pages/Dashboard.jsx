@@ -1,6 +1,6 @@
 import { NavDashboard } from "../components/NavDashboard";
 
-import {Routes, Route } from "react-router-dom" ;
+import {Routes, Route, Outlet } from "react-router-dom" ;
 import Product from "./Product";
 import { Container } from "react-bootstrap";
 import Dash from "../components/Dash";
@@ -16,6 +16,7 @@ export const Dashboard = () => {
                     <Route path="/Dash" element={<Dash/>}/>
                     <Route path="/Product" element={<Product/>}/>
                 </Routes>
+                <Outlet/>
             </Container>
         </>
     )
