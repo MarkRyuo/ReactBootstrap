@@ -12,7 +12,7 @@ export const Dashboard = () => {
         <>
         <NavDashboard/>
         <Routes>
-            <Route path="/Product" element={<Dash/>}/>
+            <Route path="/Dash" element={<Dash/>}/>
             <Route path="/Product" element={<Product/>}/>
         </Routes>
         </>
