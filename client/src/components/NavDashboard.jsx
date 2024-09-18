@@ -23,7 +23,7 @@ export const NavDashboard = () => {
                                 <Link to="/Product">
                                     Product
                                 </Link>
-                                <Button variant="secondary">Secondary</Button>
+                                <Link to='/Dashboard' variant="secondary">Secondary</Link>
                                 <Button variant="success">Success</Button>
                             </Offcanvas.Body>
                         </Offcanvas>
