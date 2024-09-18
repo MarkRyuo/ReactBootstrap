@@ -20,7 +20,7 @@ export const NavDashboard = () => {
                                 <Offcanvas.Title>List</Offcanvas.Title>
                             </Offcanvas.Header>
                             <Offcanvas.Body>
-                                <Button as={Link} to=" Product">
+                                <Button as={Link} to=" Product" onClick={() => {handleClose()}}>
                                     Product
                                 </Button>
                                 <Button as={Link}  to=' Dash' variant="secondary" onClick={() => {handleClose()}}>Dashboard</Button>
