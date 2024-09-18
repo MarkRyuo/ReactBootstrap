@@ -30,7 +30,7 @@ export const NavDashboard = () => {
                                         <Button as={Link}  to=' Dash' variant="secondary" onClick={() => {handleClose()}}>Dashboard</Button>
                                     </Col>
 
-                                    <Col lg='12'>
+                                    <Col lg='12' className='my-3'>
                                         <Button as={Link} to='/' variant="success" >Logout</Button>
                                     </Col>
                                 </Row>
