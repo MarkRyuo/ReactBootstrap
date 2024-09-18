@@ -1,4 +1,4 @@
-import { Button, Container, Navbar, Offcanvas } from 'react-bootstrap'
+import { Button, Container, Navbar, Offcanvas, Row } from 'react-bootstrap'
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useState } from 'react';
 // import { useNavigate } from 'react-router-dom';
@@ -15,11 +15,16 @@ export const NavDashboard = () => {
             <Navbar className="bg-body-tertiary">
                 <Container>
                     <Button variant="outline-primary" onClick={handleShow}><GiHamburgerMenu /></Button>
-                        <Offcanvas show={show} onHide={handleClose}>
+                        <Offcanvas show={show} onHide={handleClose} >
                             <Offcanvas.Header closeButton>
                                 <Offcanvas.Title>List</Offcanvas.Title>
                             </Offcanvas.Header>
                             <Offcanvas.Body>
+                                <Row>
+                                    <Col>
+                                        
+                                    </Col>
+                                </Row>
                                 <Button as={Link} to=" Product" onClick={() => {handleClose()}}>
                                     Product
                                 </Button>

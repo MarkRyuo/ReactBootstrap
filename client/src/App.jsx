@@ -14,7 +14,7 @@ function App() {
   return (
     <Router>
       <div className='App'>
-          <Container className='Content'>
+          <Container className='Content' fluid>
             <Routes>
               <Route path='/' element={<Login />}/> {/* Root */}
               <Route path='Dashboard' element={<Dashboard />}>  {/**Parent */}
