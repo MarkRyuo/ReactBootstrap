@@ -20,10 +20,10 @@ export const NavDashboard = () => {
                                 <Offcanvas.Title>List</Offcanvas.Title>
                             </Offcanvas.Header>
                             <Offcanvas.Body>
-                                <Link to="/Product">
+                                <Button as={Link} to="/Product">
                                     Product
-                                </Link>
-                                <Link to='/Dash' variant="secondary">Dashboard</Link>
+                                </Button>
+                                <Button as={Link}  to='/Dash' variant="secondary">Dashboard</Button>
                                 <Button variant="success">Success</Button>
                             </Offcanvas.Body>
                         </Offcanvas>
