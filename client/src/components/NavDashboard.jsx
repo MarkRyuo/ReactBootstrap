@@ -5,6 +5,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { IoPersonCircleOutline } from "react-icons/io5";
 import { IoIosArrowDropdown } from "react-icons/io";
+import { MdProductionQuantityLimits } from "react-icons/md";
 
 export const NavDashboard = () => {
 
@@ -31,7 +32,7 @@ export const NavDashboard = () => {
                                 <Row className='text-center'>
                                     <Col lg='12' className='my-3' >
                                         <Button as={Link} to=" Product" onClick={() => {handleClose()}} style={{width:'100%'}}>
-                                            <p>Product</p>
+                                            <p className='m-0' style={{display:"flex"}}><MdProductionQuantityLimits />Product</p>
                                         </Button>
                                     </Col>
                                     <Col lg='12' className='my-3'>
