@@ -13,9 +13,8 @@ export const Dashboard = () => {
                     <NavDashboard/>
                 </div>
                 <div>
-                    
+                    <Outlet/> {/** Nilalaman ay ang nested route */}
                 </div>
-                <Outlet/> {/** Nilalaman ay ang nested route */}
             </Container>
         </>
     )
