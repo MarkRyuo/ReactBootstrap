@@ -30,8 +30,8 @@ export const NavDashboard = () => {
                             <Offcanvas.Body>
                                 <Row className='text-center'>
                                     <Col lg='12' className='my-3' >
-                                        <Button as={Link} to=" Product" onClick={() => {handleClose()}}>
-                                        Product
+                                        <Button as={Link} to=" Product" onClick={() => {handleClose()}} style={{width:'100%'}}>
+                                            <p>Product</p>
                                         </Button>
                                     </Col>
                                     <Col lg='12' className='my-3'>
