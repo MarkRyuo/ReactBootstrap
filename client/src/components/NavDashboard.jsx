@@ -19,11 +19,12 @@ export const NavDashboard = () => {
                     <Button variant="outline-primary" onClick={handleShow}><GiHamburgerMenu /></Button>
                         <Offcanvas show={show} onHide={handleClose} >
                             <Offcanvas.Header closeButton>
-                                <Link to=#>
+                                <Link to='#' style={{textDecoration: "none", color: "black"}}>
                                     <Offcanvas.Title>
                                     <IoPersonCircleOutline size={50}/>
-                                        <Link to='#' style={{textDecoration: "none", color: "black"}}>Admin Name<IoIosArrowDropdown /></Link>
-                                </Offcanvas.Title>
+                                        Admin Name
+                                        <IoIosArrowDropdown />
+                                    </Offcanvas.Title>
                                 </Link>
                             </Offcanvas.Header>
                             <Offcanvas.Body>
