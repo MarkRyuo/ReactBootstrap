@@ -4,6 +4,7 @@ import { useState } from 'react';
 // import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import { IoPersonCircleOutline } from "react-icons/io5";
+import { IoIosArrowDropdown } from "react-icons/io";
 
 export const NavDashboard = () => {
 
@@ -19,8 +20,8 @@ export const NavDashboard = () => {
                         <Offcanvas show={show} onHide={handleClose} >
                             <Offcanvas.Header closeButton>
                                 <Offcanvas.Title>
-                                <IoPersonCircleOutline />
-                                Admin Name
+                                <IoPersonCircleOutline size={50}/>
+                                <Link to='#' style={{textDecoration: "none", color: "black"}}>Admin Name<IoIosArrowDropdown /></Link>
                                 </Offcanvas.Title>
                             </Offcanvas.Header>
                             <Offcanvas.Body>
