@@ -1,11 +1,14 @@
-
+import { Container } from "react-bootstrap"
 
 
 
 export default function Dash() {
-  return (
-    <div>
-    
-    </div>
-  )
+
+    return (
+        <div>
+            <Container fluid="lg">
+                <h1>Dashboard</h1>
+            </Container>
+        </div>
+    )
 }
