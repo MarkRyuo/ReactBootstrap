@@ -31,11 +31,10 @@ export const NavDashboard = () => {
                                     </Col>
 
                                     <Col>
-
+                                        <Button as={Link} to='/' variant="success" >Logout</Button>
                                     </Col>
                                 </Row>
                                 
-                                <Button as={Link} to='/' variant="success" >Logout</Button>
                             </Offcanvas.Body>
                         </Offcanvas>
                         <Navbar.Brand>SIMS</Navbar.Brand>
