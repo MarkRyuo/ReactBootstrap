@@ -13,8 +13,8 @@ export const Dashboard = () => {
             <Container fluid='lg'>
                 <NavDashboard/>
                 <Routes>
-                    <Route path="/Dash" element={<Dash/>}/>
-                    <Route path="/Product" element={<Product/>}/>
+                    <Route path="Dash" element={<Dash/>}/>
+                    <Route path="Product" element={<Product/>}/>
                 </Routes>
                 <Outlet/>
             </Container>
