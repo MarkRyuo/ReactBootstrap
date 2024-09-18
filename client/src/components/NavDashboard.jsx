@@ -23,8 +23,8 @@ export const NavDashboard = () => {
                                 <Button as={Link} to=" Product">
                                     Product
                                 </Button>
-                                <Button as={Link}  to=' Dash' variant="secondary" onClick={handleClose()}>Dashboard</Button>
-                                <Button as={Link} to='/' variant="success" onClick={handleClose()}>Logout</Button>
+                                <Button as={Link}  to=' Dash' variant="secondary" onClick={handleClose}>Dashboard</Button>
+                                <Button as={Link} to='/' variant="success" onClick={}>Logout</Button>
                             </Offcanvas.Body>
                         </Offcanvas>
                         <Navbar.Brand>SIMS</Navbar.Brand>
