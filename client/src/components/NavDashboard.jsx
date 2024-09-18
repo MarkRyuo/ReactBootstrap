@@ -12,16 +12,16 @@ export const NavDashboard = () => {
 
     return (
         <>
-            <Navbar className="bg-body-tertiary">
+            <Navbar className="bg-tertiary">
                 <Container>
                     <Button variant="outline-primary" onClick={handleShow}><GiHamburgerMenu /></Button>
                         <Offcanvas show={show} onHide={handleClose} >
                             <Offcanvas.Header closeButton>
-                                <Offcanvas.Title>List</Offcanvas.Title>
+                                <Offcanvas.Title>Admin Name</Offcanvas.Title>
                             </Offcanvas.Header>
                             <Offcanvas.Body>
-                                <Row>
-                                    <Col lg='12' className='my-3'>
+                                <Row className='text-center'>
+                                    <Col lg='12' className='my-3' >
                                         <Button as={Link} to=" Product" onClick={() => {handleClose()}}>
                                         Product
                                         </Button>
