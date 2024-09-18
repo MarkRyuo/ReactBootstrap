@@ -18,7 +18,7 @@ function App() {
             <Routes>
               <Route path='/' element={<Login />}/> {/* Root */}
               <Route path='/Dashboard' element={<Dashboard />}>  {/**Parent */}
-                {/* Childs */}
+                {/* Child's */}
                 <Route path=' Dash' element={<Dash />}/> 
                 <Route path=' Product' element={<Product />}/>
               </Route>
