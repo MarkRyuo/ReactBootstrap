@@ -3,6 +3,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { useState } from 'react';
 // import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import { IoPersonCircleOutline } from "react-icons/io5";
 
 export const NavDashboard = () => {
 
@@ -17,7 +18,10 @@ export const NavDashboard = () => {
                     <Button variant="outline-primary" onClick={handleShow}><GiHamburgerMenu /></Button>
                         <Offcanvas show={show} onHide={handleClose} >
                             <Offcanvas.Header closeButton>
-                                <Offcanvas.Title>Admin Name</Offcanvas.Title>
+                                <Offcanvas.Title>
+                                <IoPersonCircleOutline />
+                                Admin Name
+                                </Offcanvas.Title>
                             </Offcanvas.Header>
                             <Offcanvas.Body>
                                 <Row className='text-center'>
