@@ -1,7 +1,6 @@
 import { Button, Container, Navbar, Offcanvas, Row, Col } from 'react-bootstrap'
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useState } from 'react';
-// import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import { IoPersonCircleOutline } from "react-icons/io5";
 import { IoIosArrowDropdown } from "react-icons/io";
@@ -32,7 +31,7 @@ export const NavDashboard = () => {
                                 <Row className='text-center'>
                                     <Col lg='12' className='my-3' >
                                         <Button as={Link} to=" Product" onClick={() => {handleClose()}} style={{width:'100%'}}>
-                                            <p className='m-0' style={{display:"flex"}}><MdProductionQuantityLimits />Product</p>
+                                            <p className='m-0' style={{display:"flex"}}><MdProductionQuantityLimits size={25}/>Product</p>
                                         </Button>
                                     </Col>
                                     <Col lg='12' className='my-3'>
