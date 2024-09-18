@@ -16,7 +16,11 @@ export const NavDashboard = () => {
         <>
             <Navbar className="bg-tertiary">
                 <Container>
-                    <Button variant="outline-primary" onClick={handleShow}><GiHamburgerMenu /></Button>
+                        <Navbar.Brand>
+                            <Button variant="outline-primary" onClick={handleShow}><GiHamburgerMenu /></Button>
+                            SIMS
+                        </Navbar.Brand>
+
                         <Offcanvas show={show} onHide={handleClose} >
                             <Offcanvas.Header closeButton>
                                 <Link to='#' style={{textDecoration: "none", color: "black"}}>
@@ -45,13 +49,6 @@ export const NavDashboard = () => {
                                 
                             </Offcanvas.Body>
                         </Offcanvas>
-                        <Navbar.Brand>
-                            SIMS
-                        
-                        
-                        
-                        
-                        </Navbar.Brand>
                 </Container>
             </Navbar>
         </>
