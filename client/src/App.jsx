@@ -17,8 +17,9 @@ function App() {
           <Container className='Content'>
             <Routes>
               <Route path='/' element={<Login />}/> {/* Root */}
-              <Route path='Dashboard' element={<Dashboard />}> 
-                <Route path=' Dash' element={<Dash />}/>
+              <Route path='/Dashboard' element={<Dashboard />}>  {/**Parent */}
+                {/* Childs */}
+                <Route path=' Dash' element={<Dash />}/> 
                 <Route path=' Product' element={<Product />}/>
               </Route>
             </Routes>
