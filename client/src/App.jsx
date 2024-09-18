@@ -13,7 +13,6 @@ function App() {
   return (
     <Router>
       <div className='App'>
-          <NavDashboard/>
           <div className='Content'>
             <Routes>
               <Route path='/' element={<Login/>}/>
