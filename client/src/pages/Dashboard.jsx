@@ -9,7 +9,9 @@ export const Dashboard = () => {
     return (
         <>
             <Container fluid='lg'>
-                <NavDashboard/>
+                <div>
+                    <NavDashboard/>
+                </div>
                 <Outlet/> {/** Nilalaman ay ang nested route */}
             </Container>
         </>
