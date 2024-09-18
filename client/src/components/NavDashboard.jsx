@@ -21,12 +21,12 @@ export const NavDashboard = () => {
                             </Offcanvas.Header>
                             <Offcanvas.Body>
                                 <Row>
-                                    <Col lg='12'>
+                                    <Col lg='12' className='my-3'>
                                         <Button as={Link} to=" Product" onClick={() => {handleClose()}}>
                                         Product
                                         </Button>
                                     </Col>
-                                    <Col lg='12'>
+                                    <Col lg='12' className='my-3'>
                                         <Button as={Link}  to=' Dash' variant="secondary" onClick={() => {handleClose()}}>Dashboard</Button>
                                     </Col>
 
