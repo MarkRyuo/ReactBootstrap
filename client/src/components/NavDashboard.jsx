@@ -45,7 +45,13 @@ export const NavDashboard = () => {
                                 
                             </Offcanvas.Body>
                         </Offcanvas>
-                        <Navbar.Brand>SIMS</Navbar.Brand>
+                        <Navbar.Brand>
+                            SIMS
+                        
+                        
+                        
+                        
+                        </Navbar.Brand>
                 </Container>
             </Navbar>
         </>
