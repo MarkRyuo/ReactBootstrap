@@ -27,15 +27,14 @@ export const NavDashboard = () => {
                                         </Button>
                                     </Col>
                                     <Col>
-
+                                        <Button as={Link}  to=' Dash' variant="secondary" onClick={() => {handleClose()}}>Dashboard</Button>
                                     </Col>
 
                                     <Col>
-                                        
+
                                     </Col>
                                 </Row>
                                 
-                                <Button as={Link}  to=' Dash' variant="secondary" onClick={() => {handleClose()}}>Dashboard</Button>
                                 <Button as={Link} to='/' variant="success" >Logout</Button>
                             </Offcanvas.Body>
                         </Offcanvas>
