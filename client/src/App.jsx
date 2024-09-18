@@ -2,10 +2,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
 import { Login } from './pages/Login';
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom" ;
-// import { Dashboard } from './pages/Dashboard';
+
 import Product from './pages/Product';
-import { NavDashboard } from './components/NavDashboard';
 import Dash from './components/Dash';
+import { Dashboard } from './pages/Dashboard';
+import { Container } from 'react-bootstrap';
 
 function App() {
 
@@ -13,14 +14,16 @@ function App() {
   return (
     <Router>
       <div className='App'>
-          <NavDashboard/>
-          <div className='Content'>
+          <Container className='Content' fluid>
             <Routes>
-              <Route path='/' element={<Login/>}/>
-              <Route path='/Dash' element={<Dash/>}/>
-              <Route path='/Product' element={<Product/>}/>
+              <Route path='/' element={<Login />}/> {/* Root */}
+              <Route path='Dashboard' element={<Dashboard />}>  {/**Parent */}
+                {/* Child's */}
+                <Route path=' Dash' element={<Dash />}/> 
+                <Route path=' Product' element={<Product />}/>
+              </Route>
             </Routes>
-          </div>
+          </Container>
       </div>
     </Router>
   )

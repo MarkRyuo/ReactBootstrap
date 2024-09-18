@@ -1,8 +1,10 @@
-import { Button, Container, Navbar, Offcanvas } from 'react-bootstrap'
+import { Button, Container, Navbar, Offcanvas, Row, Col } from 'react-bootstrap'
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useState } from 'react';
-// import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import { IoPersonCircleOutline } from "react-icons/io5";
+import { IoIosArrowDropdown } from "react-icons/io";
+import { MdProductionQuantityLimits } from "react-icons/md";
 
 export const NavDashboard = () => {
 
@@ -12,22 +14,41 @@ export const NavDashboard = () => {
 
     return (
         <>
-            <Navbar className="bg-body-tertiary">
+            <Navbar className="bg-tertiary">
                 <Container>
-                    <Button variant="outline-primary" onClick={handleShow}><GiHamburgerMenu /></Button>
-                        <Offcanvas show={show} onHide={handleClose}>
+                        <Navbar.Brand>
+                            <Button variant="outline-primary" onClick={handleShow}><GiHamburgerMenu /></Button>
+                            SIMS
+                        </Navbar.Brand>
+
+                        <Offcanvas show={show} onHide={handleClose} >
                             <Offcanvas.Header closeButton>
-                                <Offcanvas.Title>List</Offcanvas.Title>
+                                <Link to='#' style={{textDecoration: "none", color: "black"}}>
+                                    <Offcanvas.Title>
+                                    <IoPersonCircleOutline size={50}/>
+                                        Admin Name
+                                        <IoIosArrowDropdown />
+                                    </Offcanvas.Title>
+                                </Link>
                             </Offcanvas.Header>
                             <Offcanvas.Body>
-                                <Button as={Link} to="/Product">
-                                    Product
-                                </Button>
-                                <Button as={Link}  to='/Dash' variant="secondary">Dashboard</Button>
-                                <Button as={Link} to='/' variant="success">Logout</Button>
+                                <Row className='text-center'>
+                                    <Col lg='12' className='my-3' >
+                                        <Button as={Link} to=" Product" onClick={() => {handleClose()}} style={{width:'100%'}}>
+                                            <p className='m-0' style={{display:"flex"}}><MdProductionQuantityLimits size={25}/>Product</p>
+                                        </Button>
+                                    </Col>
+                                    <Col lg='12' className='my-3'>
+                                        <Button as={Link}  to=' Dash' variant="secondary" onClick={() => {handleClose()}}>Dashboard</Button>
+                                    </Col>
+
+                                    <Col lg='12' className='my-3'>
+                                        <Button as={Link} to='/' variant="success" >Logout</Button>
+                                    </Col>
+                                </Row>
+                                
                             </Offcanvas.Body>
                         </Offcanvas>
-                        <Navbar.Brand>SIMS</Navbar.Brand>
                 </Container>
             </Navbar>
         </>

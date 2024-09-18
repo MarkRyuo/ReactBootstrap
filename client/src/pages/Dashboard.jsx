@@ -1,9 +1,7 @@
 import { NavDashboard } from "../components/NavDashboard";
 
-import {Routes, Route } from "react-router-dom" ;
-import Product from "./Product";
+import {Outlet } from "react-router-dom" ;
 import { Container } from "react-bootstrap";
-import Dash from "../components/Dash";
 
 
 export const Dashboard = () => {
@@ -11,11 +9,12 @@ export const Dashboard = () => {
     return (
         <>
             <Container fluid='lg'>
-                <NavDashboard/>
-                <Routes>
-                    <Route path="/Dash" element={<Dash/>}/>
-                    <Route path="/Product" element={<Product/>}/>
-                </Routes>
+                <div className="Nav-Container">
+                    <NavDashboard/>
+                </div>
+                <div className="Dash-Content">
+                    <Outlet/> {/** Nilalaman ay ang nested route */}
+                </div>
             </Container>
         </>
     )
