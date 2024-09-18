@@ -12,7 +12,7 @@ export const Dashboard = () => {
                 <div className="Nav-Container">
                     <NavDashboard/>
                 </div>
-                <div>
+                <div className="Dash-Content">
                     <Outlet/> {/** Nilalaman ay ang nested route */}
                 </div>
             </Container>
