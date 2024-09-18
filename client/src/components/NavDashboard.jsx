@@ -2,19 +2,13 @@ import { Button, Container, Navbar, Offcanvas } from 'react-bootstrap'
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-
+import { Link } from 'react-router-dom';
 
 export const NavDashboard = () => {
 
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
-
-    const navigate = useNavigate() ;
-
-    const handleProduct = () => {
-        navigate("/Dashboard/Product")
-    }
 
     return (
         <>
@@ -26,10 +20,9 @@ export const NavDashboard = () => {
                                 <Offcanvas.Title>List</Offcanvas.Title>
                             </Offcanvas.Header>
                             <Offcanvas.Body>
-                                <Button variant="primary" onClick={() => {
-                                    handleClose()
-                                    handleProduct()
-                                }}>Product</Button>
+                                <Link to="/Product">
+                                    Product
+                                </Link>
                                 <Button variant="secondary">Secondary</Button>
                                 <Button variant="success">Success</Button>
                             </Offcanvas.Body>
