@@ -3,6 +3,7 @@ import { NavDashboard } from "../components/NavDashboard";
 import {Routes, Route } from "react-router-dom" ;
 import Product from "./Product";
 import { Container } from "react-bootstrap";
+import Dash from "../components/Dash";
 
 
 export const Dashboard = () => {
@@ -11,6 +12,7 @@ export const Dashboard = () => {
         <>
         <NavDashboard/>
         <Routes>
+            <Route path="/Product" element={<Dash/>}/>
             <Route path="/Product" element={<Product/>}/>
         </Routes>
         </>
